@@ -13,8 +13,6 @@ use pocketmine\plugin\PluginBase;
 
 # Plugin Events Libs 
 
-# Coming Soon
-
 class Main extends PluginBase implements Listener {
 
       public function onEnable() : void {
