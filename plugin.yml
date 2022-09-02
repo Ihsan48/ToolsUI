@@ -1,0 +1,6 @@
+name: ToolsUI
+main: HenryDM\ToolsUI\Main
+api: [4.0.0]
+version: 1.0.0
+author: HenryDM
+description: Advanced plugin to manage tools on your server
