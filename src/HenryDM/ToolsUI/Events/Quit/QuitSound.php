@@ -1,13 +1,13 @@
 <?php
 
-namespace HenryDM\ToolsUI\Events\Join;
+namespace HenryDM\ToolsUI\Events\Quit;
 
 use HenryDM\ToolsUI\Main;
 use pocketmine\event\Listener;
 
 use pocketmine\event\player\PlayerQuitEvent;
 
-class JoinSound implements Listener {
+class QuitSound implements Listener {
 
     public function __construct(private Main $main) {
         $this->main = $main;
