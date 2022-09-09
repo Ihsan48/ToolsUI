@@ -1,0 +1,23 @@
+# =====================
+#     Join Message 
+# =====================
+# Message on Player Join in the Server
+# You can use tags {player} for name & {line} for new line
+
+join-message: false
+popup: false 
+message: "Welcome to server"
+
+# =====================
+#       Join Sound 
+# =====================
+
+join-sound: false 
+join-sound-name: "random.pop"
+
+# =====================
+#       Quit Sound 
+# =====================
+
+quit-sound: false 
+quit-sound-name: "random.pop"
