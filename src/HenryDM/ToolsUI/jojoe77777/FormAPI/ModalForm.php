@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace HenryDM\CustomPVP\Libs\Forms\FormAPI;
+namespace jojoe77777\FormAPI;
 
 use pocketmine\form\FormValidationException;
 
