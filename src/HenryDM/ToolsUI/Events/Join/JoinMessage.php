@@ -1,6 +1,6 @@
 <?php
 
-namespace HenryDM\ToolsUI\Events\Join\JoinMessage;
+namespace HenryDM\ToolsUI\Events\Join;
 
 use HenryDM\ToolsUI\Main;
 use pocketmine\event\Listener;
