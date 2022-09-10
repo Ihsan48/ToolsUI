@@ -25,7 +25,8 @@ class Main extends PluginBase implements Listener {
           $this->getLogger()->warning("Your config file is outdate, Please consider update!");
           rename($this->getDataFolder() . "config.yml", $this->getDataFolder() . "config_outdate.yml");
         }
-        
+      }
+
         $events = [
           JoinMessage::class,
           JoinSound::class,
@@ -52,5 +53,4 @@ class Main extends PluginBase implements Listener {
         public function getMainConfig() : Config {
           return $this->cfg;
         }
-    } 
-}
+} 
