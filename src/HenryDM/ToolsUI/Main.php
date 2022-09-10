@@ -22,7 +22,7 @@ class Main extends PluginBase implements Listener {
       public function onEnable() : void {
         $this->saveDefaultConfig();
         if($this->getConfig()->get("Config-Version") < "1.0.0") {
-          $this->getLogger()->warning("Your config file is outdate, Please consider update!")
+          $this->getLogger()->warning("Your config file is outdate, Please consider update!");
           rename($this->getDataFolder() . "config.yml", $this->getDataFolder() . "config_outdate.yml");
         }
         
