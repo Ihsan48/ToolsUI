@@ -2,10 +2,12 @@
 
 namespace HenryDM\ToolsUI\Events\Join;
 
-use HenryDM\ToolsUI\Main;
+
 use pocketmine\event\Listener;
 
 use pocketmine\event\player\PlayerJoinEvent;
+
+use HenryDM\ToolsUI\Main;
 
 class JoinMessage implements Listener {
     
@@ -14,14 +16,10 @@ class JoinMessage implements Listener {
     }
 
     public function onJoin(PlayerJoinEvent $event) {
-# ================================
-       $player = $event->getPlayer();
-       $message = $this->getMain()->cfg->get("message");
-       $line = "\n"
-       str_replace("{player}", "{line}", $name, $line);
-       $name = $player->getName();
-# ================================
+        $player = $event->getPlayer();
+        $name = $player->getName();
         if($this->getMain()->cfg->get("join-message") === true) {
+            $message = str_replace(["{player}", "{line}"], [$name, "\n"], $this->getMain()->cfg->get("message"));
             if($this->getMain()->cfg->get("popup") === true) {
                 $player->sendPopup($message);
             } else {

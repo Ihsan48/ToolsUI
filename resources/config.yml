@@ -6,7 +6,7 @@
 
 join-message: false
 popup: false 
-message: "Welcome to server"
+message: "Welcome to server {player}"
 
 # =====================
 #       Join Sound 
