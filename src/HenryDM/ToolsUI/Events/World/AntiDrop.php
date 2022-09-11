@@ -8,7 +8,7 @@ use pocketmine\event\player\PlayerDropItemEvent;
 
 class AntiDrop implements Listener {
 
-    public function __construct(Main $main) {
+    public function __construct(private Main $main) {
         $this->main = $main
     }
 
@@ -29,5 +29,8 @@ class AntiDrop implements Listener {
                 }
             }
         }
+    }
+    public function getMain() : Main {
+        return $this->main;
     }
 }

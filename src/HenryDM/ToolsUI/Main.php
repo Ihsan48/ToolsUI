@@ -38,7 +38,7 @@ class Main extends PluginBase implements Listener {
             QuitSound::class,
             AntiPlace::class,
             AntiBreak::class,
-            AntiDrop:class
+            AntiDrop::class
         ];
         foreach($events as $e) {
             $this->getServer()->getPluginManager()->registerEvents(new $e($this), $this);
