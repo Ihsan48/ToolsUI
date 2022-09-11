@@ -1,3 +1,4 @@
+---
 # =====================
 #    Config Version
 # =====================
@@ -63,4 +64,15 @@ anti-place-message: "§cYou can't place blocks here!"
 
 anti-place-worlds: ["Lobby", "Lobby1"]
 
+# =====================
+#      Anti Place
+# =====================
+# Event to prevent players drop items in certain worlds
 
+anti-drop: false
+anti-drop-alert-message: false
+anti-drop-message-popup: false
+anti-drop-message: "§cYou can't drop items here!"
+
+anti-drop-worlds ["Lobby", "KitPvP"]
+...
