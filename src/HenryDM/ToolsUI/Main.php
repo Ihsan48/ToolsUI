@@ -27,7 +27,7 @@ class Main extends PluginBase implements Listener {
 
     public function onLoad() : void {
       self::$instance = $this;
-      if($this->getConfig()->get("config-version") < 1.0.0) {
+      if($this->getConfig()->get("config-version") < "1.0.0") {
         $this->getLogger()->warning("Your configuration is outdate! Please consider update.");
         rename($this->getDataFolder() . "config.yml", $this->getDataFolder() . "config_outdate.yml");
       }
