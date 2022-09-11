@@ -20,7 +20,7 @@ class AntiPlace implements Listener {
         if($this->getMain()->cfg->get("anti-place") === true) {
             if(in_array($worldName, $this->getMain()->cfg->get("anti-place-worlds", []))) {
                 $event->cancel();
-                    if($this->getMain()->Cfg->get("anti-place-alert-message") === true) {
+                    if($this->getMain()->cfg->get("anti-place-alert-message") === true) {
                         $player->sendPopup($this->getMain()->cfg->get("anti-place-message"));
                 }
             }

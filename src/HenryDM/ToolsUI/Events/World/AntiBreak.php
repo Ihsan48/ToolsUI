@@ -20,7 +20,7 @@ class AntiBreak implements Listener {
         if($this->getMain()->cfg->get("anti-break") === true) {
             if(in_array($worldName, $this->getMain()->cfg->get("anti-break-worlds", []))) {
                 $event->cancel();
-                    if($this->getMain()->Cfg->get("anti-break-alert-message") === true) {
+                    if($this->getMain()->cfg->get("anti-break-alert-message") === true) {
                         $player->sendPopup($this->getMain()->cfg->get("anti-break-message"));
                 }
             }
