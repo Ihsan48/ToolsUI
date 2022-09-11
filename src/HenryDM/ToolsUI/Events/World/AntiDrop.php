@@ -17,7 +17,7 @@ class AntiDrop implements Listener {
         $message = $this->getMain()->cfg->get("anti-drop-message");
         $world = $player->getWorld();
         $worldName = $world->getForlderName();
-        if($this->getMain()->cfg->get("anti-drop" === true) {
+        if($this->getMain()->cfg->get("anti-drop") === true) {
             if(in_array($worldName, $this->getMain()->cfg->get("anti-drop-worlds", []))) {
                 $event->cancel();
                 if($this->getMain()->cfg->get("anti-drop-alert-message") == true) {
