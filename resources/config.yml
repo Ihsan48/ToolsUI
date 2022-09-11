@@ -1,4 +1,11 @@
 # =====================
+#    Config Version
+# =====================
+# For internal use only, do not exchange!!
+
+config-version: 1.0.0
+
+# =====================
 #     Join Message 
 # =====================
 # Message on Player Join in the Server
@@ -33,4 +40,27 @@ quit-clear: false
 clear-normal-inventory: false
 clear-armor-inventory: false
 clear-effects: false
+
+# =====================
+#      Anti Break
+# =====================
+# Event to prevent players break blocks in certain worlds
+
+anti-break: false
+anti-break-alert-message: false
+anti-break-message: "§cYou can't break blocks here!"
+
+anti-break-worlds: ["Lobby", "Lobby1"]
+
+# =====================
+#      Anti Place
+# =====================
+# Event to prevent players break blocks in certain worlds
+
+anti-place: false
+anti-place-alert-message: false
+anti-place-message: "§cYou can't place blocks here!"
+
+anti-place-worlds: ["Lobby", "Lobby1"]
+
 
