@@ -6,4 +6,6 @@ projects:
   ToolsUI:
     path: ""
     icon: "ToolsUI.png"
+    libs:
+      - src: https://poggit.pmmp.io/ci/Vecnavium/FormsUI/FormsUI
 ...

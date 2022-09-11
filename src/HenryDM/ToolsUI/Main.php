@@ -3,11 +3,13 @@
 namespace HenryDM\ToolsUI;
 
 use pocketmine\plugin\PluginBase;
+
 use pocketmine\event\Listener;
 use pocketmine\utils\Config;
 
 use HenryDM\ToolsUI\Events\Join\JoinMessage;
 use HenryDM\ToolsUI\Events\Join\JoinSound;
+use HenryDM\ToolsUI\Events\Join\JoinUi;
 
 use HenryDM\ToolsUI\Events\Quit\QuitClear;
 use HenryDM\ToolsUI\Events\Quit\QuitSound;
@@ -34,6 +36,7 @@ class Main extends PluginBase implements Listener {
         $events = [
             JoinMessage::class,
             JoinSound::class,
+            JoinUi::class,
             QuitClear::class,
             QuitSound::class,
             AntiPlace::class,

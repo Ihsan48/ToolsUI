@@ -25,6 +25,19 @@ join-sound: false
 join-sound-name: "random.pop"
 
 # =====================
+#     Join Ui
+# =====================
+
+join-ui: false
+join-title: "Henry ToolsUI"
+join-content: "Welcome to our server"
+exit-button: true
+exit-button-text: "Exit"
+exit-button-message-toggle: false
+exit-button-message: "Thanks for join to Our servers"
+
+
+# =====================
 #       Quit Sound 
 # =====================
 # Sound played when player quit from the server
