@@ -19,8 +19,13 @@ class QuitClear implements Listener {
             if($this->getMain()->cfg->get("clear-normal-inventory") === true) {
                 $player->getInventory()->clearAll();
             }
+
             if($this->getMain()->cfg->get("clear-armor-inventory") === true) {
                 $player->getArmorInventory()->clearAll();
+            }
+
+            if($this->getMain()->cfg->get("clear-effects") === true) {
+                $player->getEffects()->clear();
             }
         }
     }
