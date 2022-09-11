@@ -6,6 +6,7 @@ use HenryDM\ToolsUI\Main;
 use pocketmine\event\Listener;
 
 use pocketmine\event\player\PlayerQuitEvent;
+use HenryDM\ToolsUI\Utils\PluginUtils;
 
 class QuitSound implements Listener {
 
@@ -18,7 +19,7 @@ class QuitSound implements Listener {
         $player = $event->getPlayer();
 # =========================         
         if($this->getMain()->cfg->get("quit-sound") === true) {
-            Utils::playSound($player, $this->getMain()->cfg->get("quit-sound-name"), 1, 1);
+            PluginUtils::playSound($player, $this->getMain()->cfg->get("quit-sound-name"), 1, 1);
         }
     }
     public function getMain() : Main {

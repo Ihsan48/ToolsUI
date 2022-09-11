@@ -6,11 +6,11 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\utils\Config;
 
-use HenryDM\BlockPerms\Events\Join\JoinMessage;
-use HenryDM\BlockPerms\Events\Join\JoinSound;
+use HenryDM\ToolsUI\Events\Join\JoinMessage;
+use HenryDM\ToolsUI\Events\Join\JoinSound;
 
-use HenryDM\BlockPerms\Events\Quit\QuitClear;
-use HenryDM\BlockPerms\Events\Quit\QuitSound;
+use HenryDM\ToolsUI\Events\Quit\QuitClear;
+use HenryDM\ToolsUI\Events\Quit\QuitSound;
 
 class Main extends PluginBase implements Listener {
 

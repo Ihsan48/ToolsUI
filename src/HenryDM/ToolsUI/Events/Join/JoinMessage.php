@@ -2,12 +2,9 @@
 
 namespace HenryDM\ToolsUI\Events\Join;
 
-
-use pocketmine\event\Listener;
-
-use pocketmine\event\player\PlayerJoinEvent;
-
 use HenryDM\ToolsUI\Main;
+use pocketmine\event\Listener;
+use pocketmine\event\player\PlayerJoinEvent;
 
 class JoinMessage implements Listener {
     

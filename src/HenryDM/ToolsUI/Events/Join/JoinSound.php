@@ -6,6 +6,7 @@ use HenryDM\ToolsUI\Main;
 use pocketmine\event\Listener;
 
 use pocketmine\event\player\PlayerJoinEvent;
+use HenryDM\ToolsUI\Utils\PluginUtils;
 
 class JoinSound implements Listener {
 
@@ -18,7 +19,7 @@ class JoinSound implements Listener {
         $player = $event->getPlayer();
 # =========================         
         if($this->getMain()->cfg->get("join-sound") === true) {
-            Utils::playSound($player, $this->getMain()->cfg->get("join-sound-name"), 1, 1);
+            PluginUtils::playSound($player, $this->getMain()->cfg->get("join-sound-name"), 1, 1);
         }
     }
     public function getMain() : Main {
