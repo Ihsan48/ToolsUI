@@ -39,7 +39,7 @@ class JoinUi implements Listener {
                 }
             }
         });
-        $form->setTItle($this->getMain()->cfg->getNested("join-title"));
+        $form->setTitle($this->getMain()->cfg->getNested("join-title"));
         $form->setContent($this->getMain()->cfg->getNested("join-content"));
         if ($this->getMain()->cfg->getNested("exit-button", true)) {
             $form->addButton($this->getMain()->cfg->getNested("exit-button-text"));
