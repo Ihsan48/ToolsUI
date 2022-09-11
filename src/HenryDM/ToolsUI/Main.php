@@ -14,6 +14,7 @@ use HenryDM\ToolsUI\Events\Quit\QuitSound;
 
 use HenryDM\ToolsUI\Events\World\AntiBreak;
 use HenryDM\ToolsUI\Events\World\AntiPlace;
+use HenryDM\ToolsUI\Events\World\AntiDrop;
 
 class Main extends PluginBase implements Listener {
 
@@ -36,7 +37,8 @@ class Main extends PluginBase implements Listener {
             QuitClear::class,
             QuitSound::class,
             AntiPlace::class,
-            AntiBreak::class
+            AntiBreak::class,
+            AntiDrop:class
         ];
         foreach($events as $e) {
             $this->getServer()->getPluginManager()->registerEvents(new $e($this), $this);
