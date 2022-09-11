@@ -22,7 +22,6 @@ class AntiBreak implements Listener {
                 $event->cancel();
                     if($this->getMain()->Cfg->get("anti-break-alert-message") === true) {
                         $player->sendPopup($this->getMain()->cfg->get("anti-break-message"));
-                    }
                 }
             }
         }

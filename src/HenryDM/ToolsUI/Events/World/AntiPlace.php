@@ -22,7 +22,6 @@ class AntiPlace implements Listener {
                 $event->cancel();
                     if($this->getMain()->Cfg->get("anti-place-alert-message") === true) {
                         $player->sendPopup($this->getMain()->cfg->get("anti-place-message"));
-                    }
                 }
             }
         }
